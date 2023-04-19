@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form id="registrationForm" onsubmit="return validateForm()" method="post">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <label for="organization">Organization</label>
+        <input type="text" id="organization" name="organization">
+        <label for="hobbies">Hobbies</label>
+        <textarea id="hobbies" name="hobbies"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="output"></div>
+</body>
+</html>

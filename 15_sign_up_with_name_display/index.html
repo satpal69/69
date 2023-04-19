@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signup-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="welcome-message" class="hidden"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+      <!--
+        <button type="submit"><a href="welcome.html">Sign Up</a></button>
+      -->
+    

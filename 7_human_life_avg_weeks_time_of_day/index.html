@@ -1,0 +1,39 @@
+<html> 
+<head>
+    <title>Greeting Message using JavaScript</title> 
+</head>
+<body>
+    <label id="lblGreetings"></label>
+    <br>
+    
+    <br>
+    <label for="numberInput">Enter a number:</label>
+	<input type="number" id="numberInput">
+	<button onclick="multiply()">Give life</button>
+	<p id="result"></p>
+</body>
+
+<script>
+    alert("Hello Welcome to My site!");
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b> and Welcome to My site!';
+
+        function multiply() {
+            let number = document.getElementById("numberInput").value;
+            let result = number * 52;
+            document.getElementById("result").innerHTML = "Result: " + result + " Weeks";
+          }
+</script> 
+</html>

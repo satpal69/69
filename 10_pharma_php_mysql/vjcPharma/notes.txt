@@ -1,0 +1,1 @@
+Note: Please replace 'username' and 'password' in the database connection in the PHP files with your actual MySQL username and password. Also, make sure to create a MySQL database named "pharmacy_management_system" and a table named "medicines" with the appropriate columns (medicine_id, medicine_name, quantity, price) before using this code.
